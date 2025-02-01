@@ -1,0 +1,45 @@
+/* @import "~bootstrap/scss/bootstrap"; */
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: black !important;
+    color: white !important;
+}
+
+/* Example for buttons */
+
+/* .btn:focus {
+    outline: 2px solid #ff5733 !important; */
+/* Change this to your desired color */
+/* outline-offset: 2px; */
+/* Optional: Adjust the spacing of the outline */
+/* box-shadow: none; */
+/* Remove the default shadow if desired */
+/* } */
+
+/* Example for inputs */
+.form-control:focus {
+    transition: 0.4s;
+    border-color: #dc3545 !important;
+    /* Change the border color */
+    box-shadow: 0 0 0 0.25rem #dc3546a4 !important;
+    /* Customize the focus glow */
+}
+
+/* Custom color for the radio button */
+.form-check-input:checked {
+    background-color: #dc3545 !important;
+    /* Your custom color */
+    border-color: #dc3545 !important;
+    /* Match the custom color */
+}
+
+/* Optional: Hover and focus states */
+.form-check-input:focus {
+    transition: 0.4s;
+    box-shadow: 0 0 0 0.25rem #dc3545a4 !important;
+    /* Adjust focus ring */
+}
